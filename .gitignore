@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/EFCoreFirstExample/.vs
+/EFCoreFirstExample/bin/Debug/net7.0
+/EFCoreFirstExample/obj
