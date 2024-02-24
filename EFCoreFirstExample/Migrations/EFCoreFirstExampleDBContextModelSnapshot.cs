@@ -37,7 +37,11 @@ namespace EFCoreFirstExample.Migrations
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("boolean");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("LastName")
                         .IsRequired()
                         .HasColumnType("text");
 
@@ -47,7 +51,7 @@ namespace EFCoreFirstExample.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.ToTable("tbl_user");
                 });
 
             modelBuilder.Entity("EFCoreFirstExample.Entity.UserDetail", b =>
@@ -76,7 +80,7 @@ namespace EFCoreFirstExample.Migrations
                     b.HasIndex("UserId")
                         .IsUnique();
 
-                    b.ToTable("UserDetail");
+                    b.ToTable("tbl_user_detail");
                 });
 
             modelBuilder.Entity("EFCoreFirstExample.Entity.UserDetail", b =>

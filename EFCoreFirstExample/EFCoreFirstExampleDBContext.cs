@@ -7,6 +7,7 @@ namespace EFCoreFirstExample
     {
         private string _ConnectionString = "Host=ep-broad-hill-a1h75n8q.ap-southeast-1.aws.neon.tech;Database=assignment1;Username=testdevvn1989;Password=3MOnLWSAw1Px";
         public DbSet<User> Users { get; set; }
+        public DbSet<UserDetail> UserDeails { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             => optionsBuilder.UseNpgsql(_ConnectionString);
