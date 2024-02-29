@@ -10,7 +10,9 @@ namespace EFCoreFirstExample
         public DbSet<UserDetail> UserDeails { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-            => optionsBuilder.UseNpgsql(_ConnectionString);
+        {
+            optionsBuilder.UseNpgsql(_ConnectionString);
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

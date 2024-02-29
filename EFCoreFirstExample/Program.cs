@@ -4,13 +4,14 @@
 // Tạo thêm Product => 1 table
 // Tạo bảng UserOrderProduct (giống bảng product: quantity, note, discount) quan hệ 1-n với UserOrder 
 
-
+using Microsoft.EntityFrameworkCore;
 using EFCoreFirstExample;
 using EFCoreFirstExample.Entity;
 
 using (EFCoreFirstExampleDBContext context = new EFCoreFirstExampleDBContext())
 {
     List<User> users = context.Users.ToList();
+    var data = context.Database.SqlQuery<User>($"SELECT * FROM \"tbl_user\"").ToList();
 
     User user = new User
     {
