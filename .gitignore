@@ -5,3 +5,16 @@
 /EFCoreFirstExample/.vs
 /EFCoreFirstExample/bin/Debug/net7.0
 /EFCoreFirstExample/obj
+/RepositoryExample/.vs/RepositoryExample
+/RepositoryExample/BusinessLogic/bin/Debug/net7.0
+/RepositoryExample/BusinessLogic/obj
+/RepositoryExample/Entitiy/bin/Debug/net7.0
+/RepositoryExample/Entitiy/obj
+/RepositoryExample/PostgreSQLDatabase/bin/Debug/net7.0
+/RepositoryExample/PostgreSQLDatabase/obj
+/RepositoryExample/Presentation/bin/Debug/net7.0
+/RepositoryExample/Presentation/obj
+/RepositoryExample/Repository/bin/Debug/net7.0
+/RepositoryExample/Repository/obj
+/RepositoryExample/SQLDatabase/bin/Debug/net7.0
+/RepositoryExample/SQLDatabase/obj
